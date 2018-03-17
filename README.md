@@ -1,5 +1,6 @@
 # Forensics-2
 
+> 1. Develop the parser, using both the specification and foo.fpff for reference. stub.py contains the beginnings of a Python parser, if you'd like to develop in Python (2).
 
 My Parser code can be found in the ```stubs.py``` file located in this repository.
 
@@ -93,4 +94,9 @@ Length: 48
 
 Dwords: [4, 8, 15, 16, 23, 42]
 ```
+
+> 2. Parse foo.fpff, and report the following information:
+
+...When was ```foo.ffpf``` generated?
+
 
