@@ -3,7 +3,7 @@
 
 Here is my parser code:
 
-'''
+```
 #!/usr/bin/env python2
 
 import sys
@@ -156,6 +156,5 @@ while (index < len(data)):
 
 	sect_count = sect_count + 1
 
-
-'''
+```
 
