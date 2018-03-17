@@ -2,7 +2,7 @@
 
 > 1. Develop the parser, using both the specification and foo.fpff for reference. stub.py contains the beginnings of a Python parser, if you'd like to develop in Python (2).
 
-My Parser code can be found in the ```stubs.py``` file located in this repository.
+My Parser code can be found in the ```[stubs.py](https://github.com/yreiss1/Forensics-2/blob/master/stub.py)``` file located in this repository.
 
 This is my output:
 ```
@@ -112,5 +112,22 @@ According to the section count provided in the file header there are 9 sections,
 
 **_List each section, giving us the data in it and its type._**
 
+Section 1
 
+Type: SECTION_ASCII
+Data: i love leaving restaurant reviews!
+
+Section 2
+
+Type: SECTION_WORDS
+Data: [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9]
+
+Section 3
+
+Type: SECTION_COORDS
+Data: (25.291332, -80.3809373)
+
+These coordinates appear to lead us to location slightly west of Card Sound Road and a resteraunt by the name of Alabama Jacks between Miami and the Florida Keys:
+
+![alt text](https://www.google.com/maps/place/25%C2%B017'28.8%22N+80%C2%B022'51.4%22W/@25.2991136,-80.3583395,12z/data=!4m5!3m4!1s0x0:0x0!8m2!3d25.291332!4d-80.3809373)
 
