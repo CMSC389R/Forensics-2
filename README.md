@@ -176,3 +176,19 @@ Section 11
 
 Type: SECTION_DWORDS
 Data: ```[4, 8, 15, 16, 23, 42]```
+
+**_Report the two flags hidden in foo.fpff, and the one flag on the web referenced by foo.fpff_**
+
+The first flag I obtained from section 9, I realized that there must be more to the data that I recieved after running my code, and realized that flags for these assignments were often encrypted using a base64 encoder, I tried to decode using the same base 64 but did not recieve anything meaningful or substantial, so I thought maybe using a different base decoder would do the trick, and after using the 32 base decoder I recieved: ```it's like a factory, but for food!```
+Not sure if this is a flag.... but its something
+
+
+One flag that I found was hidden in Section 10, I realized that there was probably more to this data, and remembering the use of encryption in other homeworks, I used the same base 32 encryption that I used for the hidden data in section 9, this did not give me anything meaningful or substantial as well, so I reverted back to the base 64 we had been using up till now, using that I recieved the flag:
+
+```CMSC389R-{h1dd3n-s3ct10n-1n-f1l3}```
+
+The second flag I recieved was through parsing the PNG image in section 8, which displayed the 2nd flag: 
+
+```CMSC389R-{c4tsk1ll-m0unt41n5}```
+
+
