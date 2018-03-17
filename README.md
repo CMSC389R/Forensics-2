@@ -115,7 +115,7 @@ According to the section count provided in the file header there are 9 sections,
 Section 1
 
 Type: SECTION_ASCII
-Data: i love leaving restaurant reviews!
+Data: ```i love leaving restaurant reviews!```
 
 Section 2
 
@@ -125,9 +125,54 @@ Data: [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9]
 Section 3
 
 Type: SECTION_COORDS
-Data: (25.291332, -80.3809373)
+Data: ```(25.291332, -80.3809373)```
 
 These coordinates appear to lead us to location slightly west of Card Sound Road and a resteraunt by the name of Alabama Jacks between Miami and the Florida Keys:
 
-![alt text](https://www.google.com/maps/place/25%C2%B017'28.8%22N+80%C2%B022'51.4%22W/@25.2991136,-80.3583395,12z/data=!4m5!3m4!1s0x0:0x0!8m2!3d25.291332!4d-80.3809373)
+![alt text]()
 
+Section 4
+
+Type: SECTION_REFERENCE
+Data: ```1```
+
+Section 5
+
+Type: SECTION_ASCII
+Data: ```i wonder when they'll fix their sign?```
+
+Section 6
+
+Type: SECTION_ASCII
+Data: ```i heard their naan is always fresh```
+
+Section 7
+
+Type: SECTION_COORDS
+Data: ```(38.9910941, -76.9328019)```
+
+These coordinates appear to lead us to the street right infront of the Food Factory in College Park!
+
+![alt text]()
+
+Section 8
+
+Type: SECTION_PNG
+Data: This picture
+
+![alt text]()
+
+Section 9
+
+Type: SECTION_ASCII
+Data: ```NF2CO4ZANRUWWZJAMEQGMYLDORXXE6JMEBRHK5BAMZXXEIDGN5XWIIIK```
+
+Section 10
+
+Type: SECTION_ASCII
+Data: ```Q01TQzM4OVIte2gxZGQzbi1zM2N0MTBuLTFuLWYxbDN9```
+
+Section 11
+
+Type: SECTION_DWORDS
+Data: ```[4, 8, 15, 16, 23, 42]```
