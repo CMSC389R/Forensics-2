@@ -2,7 +2,7 @@
 
 > 1. Develop the parser, using both the specification and foo.fpff for reference. stub.py contains the beginnings of a Python parser, if you'd like to develop in Python (2).
 
-My Parser code can be found in the [```stubs.py```](https://github.com/yreiss1/Forensics-2/blob/master/stub.py)``` file located in this repository.
+My Parser code can be found in the [```stubs.py```](https://github.com/yreiss1/Forensics-2/blob/master/stub.py) file located in this repository.
 
 This is my output:
 ```
