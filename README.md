@@ -97,6 +97,20 @@ Dwords: [4, 8, 15, 16, 23, 42]
 
 > 2. Parse foo.fpff, and report the following information:
 
-...When was ```foo.ffpf``` generated?
+**_When was ```foo.ffpf``` generated?_**
+
+The file was generated on 06/14/2003 at 12:38:55, I got this time and date from the timestamp data located in the header of the ```foo.fpff``` file. After unpacking the Magic number and Version number, the timestamp was a 4 byte _word_, so inorder to convert the timestamp to datetime format I imported the datetime library and converted the timestamp to a datetime object, which allowed me to aquire the date and time of file creation.
+
+
+**_Who authored ```foo.fpff```?_**
+
+The author of ```foo.fpff``` is our one and only mnthomp, or by his real name, Mark Thompson. After unpacking the timestamp, the author is the next data provided in the header of the fpff file. Obtaining this data, we recevied the mnthomp22 username, which could only be our good friend Mark Thompson.
+
+**_How many sections does foo.fpff say it has? How many sections are there really?_**
+
+According to the section count provided in the file header there are 9 sections, but when running my code on the ```foo.fpff``` I realized that there was still more data to be parsed after parsing 9 sections, after parsing the remaing data I discovered the additional 2 sections that makes a total of 11 sections.
+
+**_List each section, giving us the data in it and its type._**
+
 
 
