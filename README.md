@@ -129,7 +129,7 @@ Data: ```(25.291332, -80.3809373)```
 
 These coordinates appear to lead us to location slightly west of Card Sound Road and a resteraunt by the name of Alabama Jacks between Miami and the Florida Keys:
 
-![alt text]()
+![alt text](https://github.com/yreiss1/Forensics-2/blob/master/location1.png)
 
 Section 4
 
@@ -153,14 +153,14 @@ Data: ```(38.9910941, -76.9328019)```
 
 These coordinates appear to lead us to the street right infront of the Food Factory in College Park!
 
-![alt text]()
+![alt text](https://github.com/yreiss1/Forensics-2/blob/master/location2.png)
 
 Section 8
 
 Type: SECTION_PNG
 Data: This picture
 
-![alt text]()
+![alt text](https://github.com/yreiss1/Forensics-2/blob/master/CMSC389R_pic8.png)
 
 Section 9
 
