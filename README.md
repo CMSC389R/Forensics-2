@@ -97,35 +97,35 @@ Dwords: [4, 8, 15, 16, 23, 42]
 
 > 2. Parse foo.fpff, and report the following information:
 
-**_When was ```foo.ffpf``` generated?_**
+**_1. When was ```foo.ffpf``` generated?_**
 
 The file was generated on 06/14/2003 at 12:38:55, I got this time and date from the timestamp data located in the header of the ```foo.fpff``` file. After unpacking the Magic number and Version number, the timestamp was a 4 byte _word_, so inorder to convert the timestamp to datetime format I imported the datetime library and converted the timestamp to a datetime object, which allowed me to aquire the date and time of file creation.
 
 
-**_Who authored ```foo.fpff```?_**
+**_2. Who authored ```foo.fpff```?_**
 
 The author of ```foo.fpff``` is our one and only mnthomp, or by his real name, Mark Thompson. After unpacking the timestamp, the author is the next data provided in the header of the fpff file. Obtaining this data, we recevied the mnthomp22 username, which could only be our good friend Mark Thompson.
 
-**_How many sections does foo.fpff say it has? How many sections are there really?_**
+**_3. How many sections does foo.fpff say it has? How many sections are there really?_**
 
 According to the section count provided in the file header there are 9 sections, but when running my code on the ```foo.fpff``` I realized that there was still more data to be parsed after parsing 9 sections, after parsing the remaing data I discovered the additional 2 sections that makes a total of 11 sections.
 
-**_List each section, giving us the data in it and its type._**
+**_4. List each section, giving us the data in it and its type._**
 
 - Section 1
 
-- Type: SECTION_ASCII
-- Data: ```i love leaving restaurant reviews!```
+  - Type: SECTION_ASCII
+  - Data: ```i love leaving restaurant reviews!```
 
 - Section 2
 
-- Type: SECTION_WORDS
-- Data: ```[3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9]```
+  - Type: SECTION_WORDS
+  - Data: ```[3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9]```
 
 - Section 3
 
-- Type: SECTION_COORDS
-- Data: ```(25.291332, -80.3809373)```
+  - Type: SECTION_COORDS
+  - Data: ```(25.291332, -80.3809373)```
 
 These coordinates appear to lead us to location slightly west of Card Sound Road and a resteraunt by the name of Alabama Jacks between Miami and the Florida Keys:
 
@@ -133,23 +133,23 @@ These coordinates appear to lead us to location slightly west of Card Sound Road
 
 - Section 4
 
-- Type: SECTION_REFERENCE
-- Data: ```1```
+  - Type: SECTION_REFERENCE
+  - Data: ```1```
 
 - Section 5
 
-- Type: SECTION_ASCII
-- Data: ```i wonder when they'll fix their sign?```
+  - Type: SECTION_ASCII
+  - Data: ```i wonder when they'll fix their sign?```
 
 - Section 6
 
-- Type: SECTION_ASCII
-- Data: ```i heard their naan is always fresh```
+  - Type: SECTION_ASCII
+  - Data: ```i heard their naan is always fresh```
 
 - Section 7
 
-- Type: SECTION_COORDS
-- Data: ```(38.9910941, -76.9328019)```
+  - Type: SECTION_COORDS
+  - Data: ```(38.9910941, -76.9328019)```
 
 These coordinates appear to lead us to the street right infront of the Food Factory in College Park!
 
@@ -157,27 +157,27 @@ These coordinates appear to lead us to the street right infront of the Food Fact
 
 - Section 8
 
-- Type: SECTION_PNG
-- Data: This picture
+  - Type: SECTION_PNG
+  - Data: This picture
 
 ![alt text](https://github.com/yreiss1/Forensics-2/blob/master/CMSC389R_pic8.png)
 
 - Section 9
 
-- Type: SECTION_ASCII
-- Data: ```NF2CO4ZANRUWWZJAMEQGMYLDORXXE6JMEBRHK5BAMZXXEIDGN5XWIIIK```
+  - Type: SECTION_ASCII
+  - Data: ```NF2CO4ZANRUWWZJAMEQGMYLDORXXE6JMEBRHK5BAMZXXEIDGN5XWIIIK```
 
 - Section 10
 
-- Type: SECTION_ASCII
-- Data: ```Q01TQzM4OVIte2gxZGQzbi1zM2N0MTBuLTFuLWYxbDN9```
+  - Type: SECTION_ASCII
+  - Data: ```Q01TQzM4OVIte2gxZGQzbi1zM2N0MTBuLTFuLWYxbDN9```
 
 - Section 11
 
-- Type: SECTION_DWORDS
-- Data: ```[4, 8, 15, 16, 23, 42]```
+  - Type: SECTION_DWORDS
+  - Data: ```[4, 8, 15, 16, 23, 42]```
 
-**_Report the two flags hidden in foo.fpff, and the one flag on the web referenced by foo.fpff_**
+**_5. Report the two flags hidden in foo.fpff, and the one flag on the web referenced by foo.fpff_**
 
 The first flag I obtained from section 9, I realized that there must be more to the data that I recieved after running my code, and realized that flags for these assignments were often encrypted using a base64 encoder, I tried to decode using the same base 64 but did not recieve anything meaningful or substantial, so I thought maybe using a different base decoder would do the trick, and after using the 32 base decoder I recieved: ```it's like a factory, but for food!```
 Not sure if this is a flag.... but its something
