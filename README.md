@@ -114,17 +114,17 @@ According to the section count provided in the file header there are 9 sections,
 
 Section 1
 
-Type: SECTION_ASCII
+Type: SECTION_ASCII⋅⋅
 Data: ```i love leaving restaurant reviews!```
 
 Section 2
 
-Type: SECTION_WORDS
+Type: SECTION_WORDS⋅⋅
 Data: ```[3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9]```
 
 Section 3
 
-Type: SECTION_COORDS
+Type: SECTION_COORDS⋅⋅
 Data: ```(25.291332, -80.3809373)```
 
 These coordinates appear to lead us to location slightly west of Card Sound Road and a resteraunt by the name of Alabama Jacks between Miami and the Florida Keys:
@@ -133,22 +133,22 @@ These coordinates appear to lead us to location slightly west of Card Sound Road
 
 Section 4
 
-Type: SECTION_REFERENCE
+Type: SECTION_REFERENCE⋅⋅
 Data: ```1```
 
 Section 5
 
-Type: SECTION_ASCII
+Type: SECTION_ASCII⋅⋅
 Data: ```i wonder when they'll fix their sign?```
 
 Section 6
 
-Type: SECTION_ASCII
+Type: SECTION_ASCII⋅⋅
 Data: ```i heard their naan is always fresh```
 
 Section 7
 
-Type: SECTION_COORDS
+Type: SECTION_COORDS⋅⋅
 Data: ```(38.9910941, -76.9328019)```
 
 These coordinates appear to lead us to the street right infront of the Food Factory in College Park!
@@ -157,24 +157,24 @@ These coordinates appear to lead us to the street right infront of the Food Fact
 
 Section 8
 
-Type: SECTION_PNG
+Type: SECTION_PNG⋅⋅
 Data: This picture
 
 ![alt text](https://github.com/yreiss1/Forensics-2/blob/master/CMSC389R_pic8.png)
 
 Section 9
 
-Type: SECTION_ASCII
+Type: SECTION_ASCII⋅⋅
 Data: ```NF2CO4ZANRUWWZJAMEQGMYLDORXXE6JMEBRHK5BAMZXXEIDGN5XWIIIK```
 
 Section 10
 
-Type: SECTION_ASCII
+Type: SECTION_ASCII⋅⋅
 Data: ```Q01TQzM4OVIte2gxZGQzbi1zM2N0MTBuLTFuLWYxbDN9```
 
 Section 11
 
-Type: SECTION_DWORDS
+Type: SECTION_DWORDS⋅⋅
 Data: ```[4, 8, 15, 16, 23, 42]```
 
 **_Report the two flags hidden in foo.fpff, and the one flag on the web referenced by foo.fpff_**
@@ -191,4 +191,5 @@ The second flag I recieved was through parsing the PNG image in section 8, which
 
 ```CMSC389R-{c4tsk1ll-m0unt41n5}```
 
+The third flag on the web eluded me untill I contacted the course facilitators. We were told that this flag would be found on the web, but not knowing where to start, I looked over all the previous clues in the assignment, and the only one that was a mystery to me was encrypted phrase ```it's like a factory, but for food!``` decoded from Section 9 of the file. I googled this phrase and recieved alot of hits for the Food Factory located in the Campus Village Shoppes on route 1 infront of the Varsity. I then remembered that one of you coordinates were located there as well! So I began looking at every link related to the Food Factory: [Food Factory's homepage](http://www.foodfactorybaltimore.com/), [The Food Factory's Yelp page](https://www.yelp.com/biz/food-factory-college-park-2), [Food Factory's trip advisor page](https://www.tripadvisor.com/Restaurant_Review-g41078-d546602-Reviews-Food_Factory_II-College_Park_Maryland.html), [Food Factory's other homepage](http://www.foodfactorycollegepark.com/), but found nothing, so I contacted the class facilitators who let me know that it was taken down. 
 
