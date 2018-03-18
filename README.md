@@ -120,7 +120,7 @@ Data: ```i love leaving restaurant reviews!```
 Section 2
 
 Type: SECTION_WORDS
-Data: [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9]
+Data: ```[3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9]```
 
 Section 3
 
